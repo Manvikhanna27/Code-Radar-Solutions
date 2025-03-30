@@ -1,15 +1,14 @@
-include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     int n;
-    cin >> n;
+    scanf("%d", &n);
     int arr[n];
     for (int i = 0; i < n; i++) {
-        cin >> arr[i];
+        scanf("%d", &arr[i]);
     }
     int k;
-    cin >> k;
+    scanf("%d", &k);
     k = k % n; // Handle cases where k >= n
     int temp[k];
     
@@ -30,9 +29,9 @@ int main() {
     
     // Print rotated array
     for (int i = 0; i < n; i++) {
-        cout << arr[i] <<endl;
+        printf("%d ", arr[i]);
     }
-    cout << endl;
+    printf("\n");
     
     return 0;
 }
